@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <title>Dar't - La série Bizarre</title>
+</head>
+<body class="margin--top">
+    <header x-data="{menuOpen: false}">
+        <div class="header">
+            <div class="header__elt">
+                <a href="../en/index.html"> 
+                    <img class="header__icon--langue" src="../public/assets/header/france.svg" alt="icone langue">
+                </a>
+                <a href="./index.html">
+                    <img class="header__icon--dart" src="../public/assets/Logo-dart.svg" alt="logo Dart">
+                </a>
+                <button class="header__btn" aria-controls="menu" aria-expanded="true" @click="menuOpen = ! menuOpen">
+                    <img x-show="!menuOpen" x-transition.opacity.duration.450ms.scale.50 class="header__icon--menu" src="../public/assets/header/menu-open.svg" alt="menu deroulant">
+                    <img x-show="menuOpen" x-transition.opacity.duration.420ms.scale.20 class="header__icon--menu" src="../public/assets/header/cross.svg" alt="croix">
+                </button>
+            </div>
+        </div>
+
+        <nav id="menu" class="menu" x-show="menuOpen" x-transition.origin.right.top.opacity.duration.500ms>
+            <ul>
+                <li class="menu__list">
+                    <a class="menu__link" href="./s-szukalski.html">Stanislaw Szukalski</a>
+                    <a class="menu__link" href="./s-szukalski.html">
+                        <img src="../public/assets/arrow-menu.svg" alt="fleche">
+                    </a>
+                </li>
+                <li class="menu__list">
+                    <a class="menu__link" href="./f-pompon.html">François Pompon</a>
+                    <a class="menu__link" href="./f-pompon.html">
+                        <img src="../public/assets/arrow-menu.svg" alt="fleche">
+                    </a>
+                </li>
+                <li class="menu__list">
+                    <a class="menu__link" href="./j-deredia.html">Jiménez Deredia</a>
+                    <a class="menu__link" href="./j-deredia.html">   
+                        <img src="../public/assets/arrow-menu.svg" alt="fleche">
+                    </a>
+                </li>
+                <li class="menu__list">
+                    <a class="menu__link" href="./c-cliff.html">Clarice Cliff</a>
+                    <a class="menu__link" href="./c-cliff.html">
+                        <img src="../public/assets/arrow-menu.svg" alt="fleche">
+                    </a>
+                </li>
+                <li class="menu__list">
+                    <a class="menu__link" href="./en-savoir-plus.html">En savoir plus</a>
+                    <a class="menu__link" href="./en-savoir-plus.html">
+                        <img src="../public/assets/arrow-menu.svg" alt="fleche">
+                    </a>
+                </li>
+                <li class="menu__list">
+                    <a class="menu__link" href="./contact.html">Contact</a>
+                    <a class="menu__link" href="./contact.html">
+                        <img src="../public/assets/arrow-menu.svg" alt="fleche">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="oeuvre__titre">La serie Bizarre</h1>
+        <p>Elle couvre les imperfections avec de simples motifs triangulaires dans un style qu'elle appelle « bizarre ». Les premiers modèles ont une marque peinte à la main, normalement, d'une seule couleur : « Bizarre de Clarice Cliff », quelquefois avec la mention 
+            « Newport Pottery » en dessous. Les œuvres sont immédiatement populaires. 
+            La jeune peintre Gladys Scarlett, rejoint alors Cliff pour l'aider dans la production et bientôt est créée une marque officielle, avec le fac-similé de la signature de l'artiste, qui proclame : « fait à la main par Clarice Cliff, Newport Pottery England. »</p>
+        <div class="oeuvre__portrait">
+            <img class="oeuvre__img" src="../public/img/CCliff/coffee-bizarre.webp">
+            <p>Conical Coffee Pot "Bizarre" Blue and White</p>
+        </div>
+        <h3>Et ensuite...</h3>
+        <p>En 1927, Colley Shorter (qui agit de façon très indépendante de son frère, Guy) envoie la céramiste au Royal College of Art de Kensington à Londres pour deux courtes périodes d'études en mars et mai. 
+            Ces dates sont enregistrées dans les archives du Royal College of Art, ce dont se souvient également Gladys Scarlett car elle reste seule à Newport pendant ce laps de temps court pour peindre la nouvelle production « Bizarre». 
+            À partir de cette année-là, Clarice Cliff est reconnue pour son travail sur les formes qu'elle a conçues, comme son porte fleurs à forme de bateau viking, bien que la modélisation pour la fabrique ait été enregistrée dans un journal professionnel dès 1923-1924.
+        </p>
+        <h3>Une nouvelle tendance</h3>
+        <p>À partir de 1929, les formes sont influencées par une tendance plus moderne, souvent angulaire et géométrique, et certaines se rapproche de ce que l'on appellera plus tard le style Art Deco. Des motifs abstraits et cubistes apparaissent dès la série Ravel en 1929 (par exemple la forme conique de la falaise). 
+            Le dessin comprend un motif abstrait de feuilles et de fleurs nommé d'après le compositeur Maurice Ravel repris sur une cafetière conique, un sucrier et un pot à lait avec quatre pieds triangulaire. C'est une autre des idées de formes appartenant au concept « Bizarre » de Cliff qui sont devenues populaires auprès de ses clients dès 1930. 
+        </p>
+        <h2 class="oeuvre__sous-titre">Voir auussi : La série Ravel</h2>
+        <div class="motif__barre--gauche"></div>
+        <div class="oeuvre__vignette">
+            <img class="vignette__img" src="../public/img/CCliff/Ravel.webp" alt="photo oeuvre">
+            <a href="./ravel.html">
+                <div class="vignette__btn">
+                    <img src="../public/assets/button/arrow-green.svg" alt="fleche">
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <img class="footer__icon--dart" src="../public/assets/Logo-dart.svg">
+        <div class="footer__motif-barre"></div>
+        <ul class="footer__list--nav">
+            <li>
+                <a href="./contact.html">Contact</a>
+            </li>
+            <li>
+                <a href="./en-savoir-plus.html">En savoir plus</a>
+            </li>
+        </ul>
+        <div class="footer__motif-barre"></div>
+        <div class="footer__mailto">
+            <a href="mailto:contact@dart.com0">contact@dart.com</a>
+        </div>
+        <div class="footer__motif-barre--petite"></div>
+        <ul class="footer__list--social">
+            <li>
+                <a href="">
+                    <img class="list__icon" src="../public/assets/footer/instagram.svg" alt="icone instagram">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img class="list__icon" src="../public/assets/footer/facebook.svg" alt="icone facebook">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img class="list__icon" src="../public/assets/footer/twitter.svg" alt="icone twitter">
+                </a>
+            </li>
+        </ul>
+        <div class="footer__copyright">
+            <p>Copyright © 2023 - Nino DA SILVA - MMI Montbéliard</p>
+            <p>Tout droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>
