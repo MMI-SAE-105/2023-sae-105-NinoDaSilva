@@ -1,0 +1,9 @@
+.footer__motif-barre {
+    content: "";
+    width: 60%;
+    height: 3px;
+    background-color: var(--vert-2);
+    opacity: 0.9;
+    border-radius: 3px;
+    margin: 10px auto;
+}
