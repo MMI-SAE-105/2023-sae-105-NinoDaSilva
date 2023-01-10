@@ -16,6 +16,8 @@ article {
 
 .artiste__article h3 {
     margin-top: 8px;
+    color: var(--vert-1);
+    font-size: var(--heading-2);
 }
 
 .artiste__article--droite,
