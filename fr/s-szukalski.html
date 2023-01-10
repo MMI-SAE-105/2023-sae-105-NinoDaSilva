@@ -5,9 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
     <title>Dar't - Stanislaw Szukalski</title>
 </head>
 <body>
-    
+    <header x-data="{menuOpen: false}">
+        <div class="header">
+            <div class="header__elt">
+                <a href="../en/homePage.html"> 
+                    <img class="header__icon--langue" src="../public/assets/header/france.svg" alt="icone langue">
+                </a>
+                <a href="./index.html">
+                    <img class="header__icon--dart" src="../public/assets/Logo-dart.svg" alt="logo Dart">
+                </a>
+                <button class="header__btn" aria-controls="menu" aria-expanded="true" @click="menuOpen = ! menuOpen">
+                    <img class="header__icon--menu" src="../public/assets/header/menu-open.svg" alt="menu deroulant">
+                </button>
+            </div>
+        </div>
+
+        <nav id="menu" class="menu" x-show="menuOpen" x-transition.duration.500ms>
+            <ul>
+                <li class="menu__list">
+                    <a class="menu__link" href="./s-szukalski.html">Stanislaw Szukalski</a>
+                    <a class="menu__link" href="./s-szukalski.html">
+                        <img src="../public/assets/arrow-menu.svg" alt="fleche">
+                    </a>
+                </li>
+                <li class="menu__list">
+                    <a class="menu__link" href="./f-pompon.html">François Pompon</a>
+                    <a class="menu__link" href="./f-pompon.html">
+                        <img src="../public/assets/arrow-menu.svg" alt="fleche">
+                    </a>
+                </li>
+                <li class="menu__list">
+                    <a class="menu__link" href="./j-deredia.html">Jiménez Deredia</a>
+                    <a class="menu__link" href="./j-deredia.html">   
+                        <img src="../public/assets/arrow-menu.svg" alt="fleche">
+                    </a>
+                </li>
+                <li class="menu__list">
+                    <a class="menu__link" href="./c-cliff.html">Clarice Cliff</a>
+                    <a class="menu__link" href="./c-cliff.html">
+                        <img src="../public/assets/arrow-menu.svg" alt="fleche">
+                    </a>
+                </li>
+                <li class="menu__list">
+                    <a class="menu__link" href="./en-savoir-plus.html">En savoir plus</a>
+                    <a class="menu__link" href="./en-savoir-plus.html">
+                        <img src="../public/assets/arrow-menu.svg" alt="fleche">
+                    </a>
+                </li>
+                <li class="menu__list">
+                    <a class="menu__link" href="./contact.html">Contact</a>
+                    <a class="menu__link" href="./contact.html">
+                        <img src="../public/assets/arrow-menu.svg" alt="fleche">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 </body>
 </html>
