@@ -7,7 +7,8 @@ img {
     margin-bottom: -5px;
 }
 
-.portrait__img {
+.portrait__img,
+.oeuvre__img {
     width: 75%;
     min-width: 250px;
     min-height: 250px;

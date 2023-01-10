@@ -143,11 +143,13 @@ h3 {
 }
 
 
-.artiste__titre {
+.artiste__titre,
+.oeuvre__titre {
     padding-top: 20px;
 }
 
-.artiste__portrait {
+.artiste__portrait,
+.oeuvre__portrait {
     contain: content;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -156,6 +158,22 @@ h3 {
     margin: auto;
 }
 
-.artiste__sous-titre {
+.artiste__sous-titre,
+.oeuvre__sous-titre {
     margin-top: 30px;
+    margin-left: 15px;
+}
+
+.oeuvre__portrait p {
+    color: var(--vert-1);
+    margin-inline: 80px;
+}
+
+
+.oeuvre__vignette {
+    position: relative;
+    width: 80%;
+    border: var(--vert-1) solid 3px;
+    border-radius: 20px;
+    margin: auto;
 }
