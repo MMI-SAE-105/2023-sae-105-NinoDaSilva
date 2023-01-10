@@ -147,11 +147,11 @@
                     <p>La fermeture des salles débute à 19h45 (21h45 les mardis)</p>
                 </li>
             </ul>
-            <button class="expo__btn" @click="tarifOpen = ! tarifOpen">
+            <button x-show="!tarifOpen" class="expo__btn" @click="tarifOpen = ! tarifOpen">
                 <p>Voir les tarifs</p>
             </button>
 
-            <div class="expo__tarif" x-show="tarifOpen" x-transition.duration.400ms>
+            <div class="expo__tarif" x-show="tarifOpen" x-transition.origin.top.duration.400ms>
                 <h2>Tarifs</h2>
                 <ul class="tarif__list">
                     <li>
