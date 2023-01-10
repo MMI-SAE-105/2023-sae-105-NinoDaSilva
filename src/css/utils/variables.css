@@ -19,6 +19,6 @@
     --small-text: 0.79rem;
 
     /* Fonts */
-    --Dancing-script: 'Dancing Script';
+    --Dancing-script: 'Dancing Script', cursive;
     --Josefin-sans: 'Josefin Sans', sans-serif;
 }

@@ -1,6 +1,7 @@
 footer {
     background-color: var(--gris-2);
     text-align: center;
+    padding: 5px;
 }
 
 .footer__list--social {
@@ -8,6 +9,16 @@ footer {
     justify-content: center;
     gap: 40px;
     padding: 10px;
+}
+
+.footer__list--nav {
+    font-family: var(--Dancing-script);
+    padding-bottom: 10px;
+    font-size: var(--subheading);
+}
+
+.footer__list--nav li {
+    padding-bottom: 10px;
 }
 
 .footer__icon--dart {

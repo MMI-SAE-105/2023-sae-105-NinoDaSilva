@@ -3,14 +3,18 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    color: var(--noir);
 }
 
 body {
     background-color: var(--gris-1);
-    color: var(--noir);
     font-family: var(--Josefin-sans);
 }
 
 main {
     padding-inline: 5px;
+}
+
+h1 {
+    font-family: var(--Dancing-script);
 }
