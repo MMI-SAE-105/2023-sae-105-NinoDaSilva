@@ -10,6 +10,10 @@
     margin-bottom: 15px;
 }
 
+.margin--top {
+    margin-top: 100px;
+}
+
 body {
     background-color: var(--gris-1);
     font-family: var(--Josefin-sans);
