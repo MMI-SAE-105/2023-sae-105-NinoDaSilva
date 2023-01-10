@@ -1,4 +1,14 @@
 .galerie {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 30px;
+    justify-content: center;
+}
+
+.galerie li {
+    height: 160px;
+    width: 160px;
+    box-shadow: 2px 1px 6px gray;
+    border-radius: 15px;
 }
