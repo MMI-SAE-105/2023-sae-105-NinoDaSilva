@@ -68,10 +68,10 @@ h1, h2 {
     font-size: var(--heading-2);
 }
 
-.expo h3 {
+.expo__titre {
     font-size: var(--heading-2);
     font-family: var(--Josefin-sans);
-    color: var(--vert-clair);
+    color: var(--blanc);
 }
 
 .expo h4 {
