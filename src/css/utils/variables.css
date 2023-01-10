@@ -11,12 +11,12 @@
 
     /* Text-size */
     /* base size: body-1 (14px) */
-    --heading-1: 2.14rem;
-    --heading-2: 1.57rem;
-    --subheading: 1.21rem;
-    --body-1: 1rem;
-    --body-2: 0.93rem;
-    --small-text: 0.79rem;
+    --heading-1: 30px;
+    --heading-2: 22px;
+    --subheading: 17px;
+    --body-1: 14px;
+    --body-2: 13px;
+    --small-text: 11px;
 
     /* Fonts */
     --Dancing-script: 'Dancing Script', cursive;
