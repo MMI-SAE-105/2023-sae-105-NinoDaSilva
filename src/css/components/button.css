@@ -2,5 +2,11 @@
     background-color: var(--gris-1);
     position: absolute;
     border-radius: 30px;
-    bottom: 10px;
+    padding: 5px;
+    padding-top: 9px;
+    text-align: center;
+    width: 80px;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 1px 1px 8px gray;
 }

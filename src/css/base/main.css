@@ -172,8 +172,11 @@ h3 {
 
 .oeuvre__vignette {
     position: relative;
-    width: 80%;
+    width: 70%;
     border: var(--vert-1) solid 3px;
     border-radius: 20px;
     margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    contain: content;
 }
