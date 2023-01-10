@@ -30,3 +30,14 @@
     margin-bottom: 25px;
     background-color: var(--vert-clair);
 }
+
+.portrait__pattern {
+    background: radial-gradient(circle, var(--vert-1) 40%, transparent 20%);
+    background-size: 1em 1em;
+    height: 87%;
+    width: 75%;
+    position: absolute;
+    right: 9%;
+    border-radius: 0 35px 0 0;
+    z-index: -1;
+}

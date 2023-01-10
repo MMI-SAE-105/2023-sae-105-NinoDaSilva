@@ -21,6 +21,7 @@ body {
 
 main {
     padding-inline: 10px;
+    font-size: var(--body-1);
 }
 
 h1, h2, h3 {
@@ -130,4 +131,17 @@ h1, h2 {
     border-radius: 15px;
     margin-left: 30px;
     margin-top: 5px;
+}
+
+
+.artiste__titre {
+    padding-top: 20px;
+}
+
+.artiste__portrait {
+    contain: content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    max-width: 600px;
 }

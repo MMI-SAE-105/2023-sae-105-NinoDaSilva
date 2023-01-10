@@ -6,3 +6,9 @@ img {
 .artiste__article--gauche img {
     margin-bottom: -5px;
 }
+
+.portrait__img {
+    width: 75%;
+    margin-top: 12px;
+    border-radius: 18px;
+}
