@@ -17,7 +17,9 @@
                 <a href="./index.html">
                     <img class="header__icon--dart" src="../public/assets/Logo-dart.svg" alt="logo Dart">
                 </a>
-                <img class="header__icon--menu" src="../public/assets/header/menu-open.svg" alt="menu deroulant">
+                <button class="header__btn" aria-controls="menu" aria-expanded="true" @click="menuOpen = ! menuOpen">
+                    <img class="header__icon--menu" src="../public/assets/header/menu-open.svg" alt="menu deroulant">
+                </button>
             </div>
         </div>
 
