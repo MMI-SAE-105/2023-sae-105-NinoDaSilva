@@ -34,7 +34,7 @@
 .portrait__pattern {
     background: radial-gradient(circle, var(--vert-1) 40%, transparent 20%);
     background-size: 1em 1em;
-    height: 87%;
+    height: 80%;
     width: 75%;
     position: absolute;
     right: 9%;
