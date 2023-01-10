@@ -1,5 +1,6 @@
 .footer__motif-barre,
-.footer__motif-barre--petite {
+.footer__motif-barre--petite,
+.motif__barre--gauche {
     content: "";
     width: 70%;
     height: 2px;
@@ -12,4 +13,12 @@
 .footer__motif-barre--petite {
     width: 50%;
     margin-top: 5px;
+}
+
+
+.motif__barre--gauche {
+    margin-left: -10px;
+    width: 140px;
+    height: 3px;
+    opacity: 1;
 }

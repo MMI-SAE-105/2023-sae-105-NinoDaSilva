@@ -16,15 +16,28 @@ body {
 }
 
 main {
-    padding-inline: 5px;
+    padding-inline: 10px;
 }
 
 h1, h2, h3 {
     font-family: var(--Dancing-script);
 }
 
-.intro {
+h1, h2 {
+    font-size: var(--heading-1);
+    color: var(--vert-1);
+}
+
+.intro,
+.titre {
     text-align: center;
-    padding-top: 40px;
+}
+
+.intro {
     padding-bottom: 30px;
+}
+
+.titre {
+    padding-top: 100px;
+    margin-bottom: 10px;
 }
