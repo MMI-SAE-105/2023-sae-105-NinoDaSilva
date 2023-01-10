@@ -163,7 +163,63 @@
 
     <h2>Quelques oeuvres...</h2>
     <section class="oeuvre">
-        
+        <div class="oeuvre__carrousel" x-data="{hrefCourant: '#img-1'}">
+            <button class="carrousel__btn" aria-label="slide précedant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth">
+                <img class="carrousel__btn--avant" src="../public/assets/arrow-carrousel.svg" alt="bouton avant">
+            </button>
+            <button class="carrousel__btn" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">
+                <img class="carrousel__btn--après" src="../public/assets/arrow-carrousel.svg" alt="bouton apres">
+            </button>
+
+            <div id="img-1" class="carrousel__img">
+                <figure>
+                    <img src="./" alt="image 1">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+            <div id="img-2" class="carrousel__img">
+                <figure>
+                    <img src="./" alt="image 2">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+            <div id="img-3" class="carrousel__img">
+                <figure>
+                    <img src="./" alt="image 3">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+            <div id="img-4" class="carrousel__img">
+                <figure>
+                    <img src="./" alt="image 4">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+            <div id="img-5" class="carrousel__img">
+                <figure>
+                    <img src="./" alt="image 5">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+            <div id="img-6" class="carrousel__img">
+                <figure>
+                    <img src="./" alt="image 6">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+            <div id="img-7" class="carrousel__img">
+                <figure>
+                    <img src="./" alt="image 7">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+            <div id="img-8" class="carrousel__img">
+                <figure>
+                    <img src="./" alt="image 8">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+        </div>
     </section>
 
     </main>
