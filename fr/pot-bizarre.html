@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <title>Dar't - Conical Coffee Pot Bizarre</title>
+</head>
+<body class="margin--top">
+    <header x-data="{menuOpen: false}">
+        <div class="header">
+            <div class="header__elt">
+                <a href="../en/index.html"> 
+                    <img class="header__icon--langue" src="../public/assets/header/france.svg" alt="icone langue">
+                </a>
+                <a href="./index.html">
+                    <img class="header__icon--dart" src="../public/assets/Logo-dart.svg" alt="logo Dart">
+                </a>
+                <button class="header__btn" aria-controls="menu" aria-expanded="true" @click="menuOpen = ! menuOpen">
+                    <img x-show="!menuOpen" x-transition.opacity.duration.450ms.scale.50 class="header__icon--menu" src="../public/assets/header/menu-open.svg" alt="menu deroulant">
+                    <img x-show="menuOpen" x-transition.opacity.duration.420ms.scale.20 class="header__icon--menu" src="../public/assets/header/cross.svg" alt="croix">
+                </button>
+            </div>
+        </div>
+
+        <nav id="menu" class="menu" x-show="menuOpen" x-transition.origin.right.top.opacity.duration.500ms>
+            <ul>
+                <li class="menu__list">
+                    <a class="menu__link" href="./s-szukalski.html">Stanislaw Szukalski</a>
+                    <a class="menu__link" href="./s-szukalski.html">
+                        <img src="../public/assets/arrow-menu.svg" alt="fleche">
+                    </a>
+                </li>
+                <li class="menu__list">
+                    <a class="menu__link" href="./f-pompon.html">François Pompon</a>
+                    <a class="menu__link" href="./f-pompon.html">
+                        <img src="../public/assets/arrow-menu.svg" alt="fleche">
+                    </a>
+                </li>
+                <li class="menu__list">
+                    <a class="menu__link" href="./j-deredia.html">Jiménez Deredia</a>
+                    <a class="menu__link" href="./j-deredia.html">   
+                        <img src="../public/assets/arrow-menu.svg" alt="fleche">
+                    </a>
+                </li>
+                <li class="menu__list">
+                    <a class="menu__link" href="./c-cliff.html">Clarice Cliff</a>
+                    <a class="menu__link" href="./c-cliff.html">
+                        <img src="../public/assets/arrow-menu.svg" alt="fleche">
+                    </a>
+                </li>
+                <li class="menu__list">
+                    <a class="menu__link" href="./en-savoir-plus.html">En savoir plus</a>
+                    <a class="menu__link" href="./en-savoir-plus.html">
+                        <img src="../public/assets/arrow-menu.svg" alt="fleche">
+                    </a>
+                </li>
+                <li class="menu__list">
+                    <a class="menu__link" href="./contact.html">Contact</a>
+                    <a class="menu__link" href="./contact.html">
+                        <img src="../public/assets/arrow-menu.svg" alt="fleche">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <footer>
+        <img class="footer__icon--dart" src="../public/assets/Logo-dart.svg">
+        <div class="footer__motif-barre"></div>
+        <ul class="footer__list--nav">
+            <li>
+                <a href="./contact.html">Contact</a>
+            </li>
+            <li>
+                <a href="./en-savoir-plus.html">En savoir plus</a>
+            </li>
+        </ul>
+        <div class="footer__motif-barre"></div>
+        <div class="footer__mailto">
+            <a href="mailto:contact@dart.com0">contact@dart.com</a>
+        </div>
+        <div class="footer__motif-barre--petite"></div>
+        <ul class="footer__list--social">
+            <li>
+                <a href="">
+                    <img class="list__icon" src="../public/assets/footer/instagram.svg" alt="icone instagram">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img class="list__icon" src="../public/assets/footer/facebook.svg" alt="icone facebook">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img class="list__icon" src="../public/assets/footer/twitter.svg" alt="icone twitter">
+                </a>
+            </li>
+        </ul>
+        <div class="footer__copyright">
+            <p>Copyright © 2023 - Nino DA SILVA - MMI Montbéliard</p>
+            <p>Tout droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>
