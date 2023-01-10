@@ -1,3 +1,36 @@
 .erreur {
     text-align: center;
+    padding-top: 30px;
+    padding: 20px;
+}
+
+.erreur img {
+    border-radius: 40px;
+}
+
+.erreur h1,
+.erreur__description {
+    font-family: var(--Josefin-sans);
+}
+
+.erreur__description {
+    font-size: var(--heading-2);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.erreur__nav {
+    margin-top: 20px;
+}
+
+.erreur__nav-link {
+    margin: 8px;
+}
+
+.erreur a {
+    font-weight: bold;
+}
+
+.erreur__link {
+    text-decoration: underline;
 }
