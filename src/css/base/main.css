@@ -6,6 +6,10 @@
     color: var(--noir);
 }
 
+.margin--bottom {
+    margin-bottom: 15px;
+}
+
 body {
     background-color: var(--gris-1);
     font-family: var(--Josefin-sans);
@@ -15,6 +19,12 @@ main {
     padding-inline: 5px;
 }
 
-h1 {
+h1, h2, h3 {
     font-family: var(--Dancing-script);
+}
+
+.intro {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
 }
