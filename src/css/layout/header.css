@@ -1,0 +1,29 @@
+header {
+    background-color: var(--gris-2);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: 18px;
+}
+
+.header__icon--langue,
+.header__icon--menu {
+    margin-top: 20px
+}
+
+.header__icon--langue {
+    width: 40px;
+    height: 40px;
+}
+
+.header__icon--dart {
+    width: 100px;
+    margin-left: 10px;
+}
+
+.header__icon--menu {
+    width: 34px;
+}
