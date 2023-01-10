@@ -19,12 +19,13 @@
                     <img class="header__icon--dart" src="../public/assets/Logo-dart.svg" alt="logo Dart">
                 </a>
                 <button class="header__btn" aria-controls="menu" aria-expanded="true" @click="menuOpen = ! menuOpen">
-                    <img class="header__icon--menu" src="../public/assets/header/menu-open.svg" alt="menu deroulant">
+                    <img x-show="!menuOpen" x-transition.opacity.duration.450ms.scale.50 class="header__icon--menu" src="../public/assets/header/menu-open.svg" alt="menu deroulant">
+                    <img x-show="menuOpen" x-transition.opacity.duration.420ms.scale.20 class="header__icon--menu" src="../public/assets/header/cross.svg" alt="croix">
                 </button>
             </div>
         </div>
 
-        <nav id="menu" class="menu" x-show="menuOpen" x-transition.duration.500ms>
+        <nav id="menu" class="menu" x-show="menuOpen" x-transition.origin.right.top.opacity.duration.500ms>
             <ul>
                 <li class="menu__list">
                     <a class="menu__link" href="./s-szukalski.html">Stanislaw Szukalski</a>

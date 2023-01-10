@@ -35,5 +35,9 @@
 }
 
 .header__icon--menu {
+    position: absolute;
+    top: 38px;
+    right: 15px;
     width: 34px;
+    height: 34px;
 }
