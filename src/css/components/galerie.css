@@ -11,4 +11,10 @@
     width: 160px;
     box-shadow: 2px 1px 6px gray;
     border-radius: 15px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.galerie li p {
+    color: var(--vert-1);
 }
