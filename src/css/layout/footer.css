@@ -1,0 +1,25 @@
+footer {
+    background-color: var(--gris-2);
+    text-align: center;
+}
+
+.footer__list--social {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 10px;
+}
+
+.footer__icon--dart {
+    width: 100px;
+}
+
+.list__icon {
+    width: 34px;
+    height: 34px;
+}
+
+.footer__copyright {
+    text-align: left;
+    font-size: var(--small-text);
+}
