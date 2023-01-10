@@ -24,13 +24,22 @@ main {
     font-size: var(--body-1);
 }
 
+h1, h2, h3, h4 {
+    color: var(--vert-1);
+}
+
 h1, h2, h3 {
     font-family: var(--Dancing-script);
 }
 
 h1, h2 {
     font-size: var(--heading-1);
-    color: var(--vert-1);
+}
+
+h3 {
+    font-size: var(--heading-2);
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .accueil__titre {
