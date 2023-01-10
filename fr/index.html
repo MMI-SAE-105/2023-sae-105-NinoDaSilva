@@ -130,7 +130,7 @@
         <h2 class="accueil__titre">Nos exposition...</h2>
         <div class="motif__barre--gauche"></div>
 
-        <section class="expo">
+        <section class="expo" x-data="{tarifOpen: false}">
             <h3>Sculptura</h3>
             <h4>Du 13 avril au 23 juin 2021</h4>
             <p>Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
@@ -145,9 +145,11 @@
                     <p>La fermeture des salles débute à 19h45 (21h45 les mardis)</p>
                 </li>
             </ul>
-            <div class="exp__bouton"></div>
+            <button class="expo__btn" @click="tarifOpen = ! tarifOpen">
+                <p>Voir les tarifs</p>
+            </button>
 
-            <div class="expo__tarif">
+            <div class="expo__tarif" x-show="tarifOpen" x-transition.duration.400ms>
                 <h2>Tarifs</h2>
                 <ul class="tarif__list">
                     <li>
@@ -169,9 +171,7 @@
                     </li>
                 </ul>
                 <h2>Billeterie en ligne juste ici</h2>
-                <div class="tarif__bouton">
-                    <img src="../public/assets/button/arrow.svg">
-                </div>
+                <img class="tarif__btn" src="../public/assets/button/arrow.svg">
             </div>
         </section>
 
