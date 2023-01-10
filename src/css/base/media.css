@@ -9,6 +9,8 @@ img {
 
 .portrait__img {
     width: 75%;
+    min-width: 250px;
+    min-height: 250px;
     margin-top: 12px;
     border-radius: 18px;
 }
