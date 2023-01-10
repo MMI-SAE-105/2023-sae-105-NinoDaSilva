@@ -1,3 +1,8 @@
 img {
     max-width: 100%;
 }
+
+.artiste__article--droite img,
+.artiste__article--gauche img {
+    margin-bottom: -5px;
+}

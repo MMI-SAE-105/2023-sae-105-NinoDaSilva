@@ -1,15 +1,22 @@
 article {
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .artiste__article {
     position: relative;
+    width: 95%;
+    max-width: 740px;
+}
+
+.artiste__article h3 {
+    margin-top: 8px;
 }
 
 .artiste__article--droite,
 .artiste__article--gauche {
     background-color: var(--vert-2);
-    padding: 10px;
+    padding: 7px;
 }
 
 .artiste__article--droite,
@@ -25,7 +32,7 @@ article {
 .article__btn,
 .article__btn--droite {
     position: absolute;
-    bottom: 45px;
+    bottom: 55px;
     border: var(--blanc) solid 2px;
     width: 100px;
     padding: 8px;
