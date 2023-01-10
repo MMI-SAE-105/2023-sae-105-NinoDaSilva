@@ -28,6 +28,10 @@ h1, h2 {
     color: var(--vert-1);
 }
 
+.accueil__titre {
+    margin-left: 20px;
+}
+
 .intro,
 .titre {
     text-align: center;
