@@ -7,18 +7,19 @@ footer {
 .footer__list--social {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    padding: 10px;
+    gap: 45px;
+    padding: 20px;
+    padding-bottom: 30px;
 }
 
 .footer__list--nav {
     font-family: var(--Dancing-script);
-    padding-bottom: 10px;
     font-size: var(--subheading);
+    padding-bottom: 2px;
 }
 
 .footer__list--nav li {
-    padding-bottom: 10px;
+    line-height: 180%;
 }
 
 .footer__icon--dart {
@@ -33,4 +34,11 @@ footer {
 .footer__copyright {
     text-align: left;
     font-size: var(--small-text);
+    font-weight: 300;
+}
+
+.footer__mailto {
+    padding-top: 30px;
+    font-size: var(--body-2);
+    font-style: italic;
 }

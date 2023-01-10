@@ -1,9 +1,15 @@
-.footer__motif-barre {
+.footer__motif-barre,
+.footer__motif-barre--petite {
     content: "";
-    width: 60%;
-    height: 3px;
+    width: 70%;
+    height: 2px;
     background-color: var(--vert-2);
-    opacity: 0.9;
+    opacity: 0.8;
     border-radius: 3px;
     margin: 10px auto;
+}
+
+.footer__motif-barre--petite {
+    width: 50%;
+    margin-top: 5px;
 }
