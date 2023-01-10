@@ -1,0 +1,6 @@
+.vignette__btn {
+    background-color: var(--gris-1);
+    position: absolute;
+    border-radius: 30px;
+    bottom: 10px;
+}
