@@ -33,7 +33,8 @@ h1, h2 {
 }
 
 .intro,
-.titre {
+.titre,
+.expo {
     text-align: center;
 }
 
@@ -44,4 +45,36 @@ h1, h2 {
 .titre {
     padding-top: 100px;
     margin-bottom: 10px;
+}
+
+
+.expo {
+    background-color: var(--vert-2);
+    padding: 10px;
+    margin-inline: -10px;
+}
+
+.expo p {
+    color: var(--blanc);
+}
+
+.expo h3 {
+    font-size: var(--heading-2);
+    font-family: var(--Josefin-sans);
+    color: var(--vert-clair);
+}
+
+.expo h4 {
+    text-align: left;
+    font-family: var(--Dancing-script);
+    font-size: var(--heading-2);
+    color: var(--blanc);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.expo__list {
+    text-align: right;
+    margin-top: 30px;
+    font-size: var(--body-2);
 }
