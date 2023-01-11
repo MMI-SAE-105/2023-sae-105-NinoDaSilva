@@ -141,7 +141,8 @@ h3 {
 }
 
 .artiste__portrait,
-.oeuvre__portrait {
+.oeuvre__portrait,
+.oeuvre {
     contain: content;
     padding-top: 25px;
     padding-bottom: 25px;
