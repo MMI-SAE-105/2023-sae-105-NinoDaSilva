@@ -191,9 +191,6 @@
                 <button class="carrousel__btn" aria-label="slide précedant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth">
                     <img class="carrousel__btn--avant" src="../public/assets/arrow-carrousel.svg" alt="bouton avant">
                 </button>
-                <button class="carrousel__btn" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">
-                    <img class="carrousel__btn--après" src="../public/assets/arrow-carrousel.svg" alt="bouton apres">
-                </button>
 
                 <div id="img-1" class="carrousel__img">
                     <figure>
@@ -243,6 +240,10 @@
                         <figcaption></figcaption>
                     </figure>
                 </div>
+
+                <button class="carrousel__btn" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">
+                    <img class="carrousel__btn--après" src="../public/assets/arrow-carrousel.svg" alt="bouton apres">
+                </button>
             </div>
         </section>
     </main>
