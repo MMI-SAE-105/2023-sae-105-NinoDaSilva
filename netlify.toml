@@ -19,4 +19,8 @@
 
     [[plugins.inputs.audits]]
     output_path="reports/en-savoir-plus.html"
-    path = "/fr/en-savoir-plus.html" 
+    path = "/fr/en-savoir-plus.html"
+
+    [[plugins.inputs.audits]]
+    output_path="reports/index.html"
+    path = "/fr/index.html"  
