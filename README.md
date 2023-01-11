@@ -4,6 +4,10 @@
 - URL du site : https://dart.nino-da-silva.fr/
 - URL FIGMA : https://www.figma.com/file/GoxKYKFz6FQEu9gLOcry2N/SAE-105-(2022)-Nino-DA-SILVA?node-id=322%3A1210&t=e4D85z2jCfVebAVm-1
 
+# Raport Lighthouse
+
+https://dart.nino-da-silva.fr/reports/accueil.html
+
 # Structure de départ pour la SAE 105.
 
 La structure de votre projet doit respecter scrupuleusement le modèle fourni dans ce dépôt (Repository).
