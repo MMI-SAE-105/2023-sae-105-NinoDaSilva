@@ -37,4 +37,13 @@
 
 .erreur__form {
     margin-top: 20px;
+    display: grid;
+}
+
+.erreur__form input {
+    width: 65%;
+    margin-inline: auto;
+    margin-top: 5px;
+    border: var(--vert-2) 2px solid;
+    border-radius: 5px;
 }
