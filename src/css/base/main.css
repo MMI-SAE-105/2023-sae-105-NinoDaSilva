@@ -167,6 +167,14 @@ h3 {
     margin-inline: 80px;
 }
 
+.oeuvre a {
+    display: flex;
+    justify-content: center;
+    color: var(--vert-1);
+    font-weight: bold;
+    font-style: italic;
+}
+
 
 .oeuvre__vignette {
     position: relative;
