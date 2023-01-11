@@ -6,7 +6,7 @@
 
 # Raport Lighthouse :
 
-## Page d'accueil
+## Page redirect
 https://dart.nino-da-silva.fr/reports/accueil.html
 
 ## Page Contact
@@ -21,8 +21,11 @@ https://dart.nino-da-silva.fr/reports/oeuvre.html
 ## Page En savoir plus
 https://dart.nino-da-silva.fr/reports/en-savoir-plus.html
 
-## Page En savoir plus
+## Page d'accueil
 https://dart.nino-da-silva.fr/reports/index.html
+
+## Page d'accueil version anglaise
+https://dart.nino-da-silva.fr/reports/index-en.html
 
 
 # Structure de départ pour la SAE 105.
