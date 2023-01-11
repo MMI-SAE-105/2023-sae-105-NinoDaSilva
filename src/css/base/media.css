@@ -25,3 +25,7 @@ img {
 .vignette__img {
     margin-bottom: -5px;
 }
+
+.frise__img {
+    min-height: 140px;
+}
