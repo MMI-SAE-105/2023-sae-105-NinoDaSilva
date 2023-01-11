@@ -1,3 +1,8 @@
+button {
+    background: none;
+    border: none;
+}
+
 .vignette__btn {
     background-color: var(--gris-1);
     position: absolute;
@@ -41,7 +46,6 @@
 
 
 .expo__btn {
-    background: none;
     border: var(--blanc) solid 2px;
     padding: 8px;
     padding-bottom: 6px;
@@ -72,4 +76,8 @@
     border-radius: 10px;
     border: var(--vert-1) solid 2px;
     box-shadow: 0 1px 5px gray;
+}
+
+.carrousel__btn {
+    
 }
