@@ -2,6 +2,7 @@
     position: relative;
     max-width: 1080px;
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .frise__container {
@@ -16,18 +17,28 @@
 .frise__date--droite,
 .frise__date--gauche {
     font-size: 36px;
-    text-shadow: 1px 3px 5px gray;
-    font-weight: bold;
+    text-shadow: 1px 4px 6px black;
+    font-weight: 600;
     position: absolute;
     margin-top: 40px;
 }
 
+.frise__date--droite p,
+.frise__date--gauche p {
+    color: var(--blanc);
+}
+
 .frise__date--droite {
-    right: 8%;
+    right: 2%;
 }
 
 .frise__date--gauche {
-    left: 8%;
+    left: 2%;
+}
+
+.date--droite {
+    margin-left: 40px;
+    text-align: right;
 }
 
 .frise__card--droite,
