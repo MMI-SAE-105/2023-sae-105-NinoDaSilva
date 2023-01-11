@@ -68,9 +68,8 @@
     </header>
 
     <main>
-        <h1 class="titre">L'Art Déco</h1>
-
         <section class="intro">
+            <h1 class="titre">L'Art Déco</h1>
             <p class="margin--bottom">L'Art déco est un mouvement artistique né dans les années 1910, principalement au lendemain de la Première Guerre mondiale (1918) et qui prit son plein épanouissement au cours des années 1920 avant de décliner lentement à partir des années 1930, pour prendra fin avec la Seconde Guerre mondiale (1939).</p>
             <p>C'est le premier mouvement d'architecture-décoration de nature mondiale.</p>
         </section>
@@ -78,7 +77,7 @@
         <h2 class="accueil__titre">Quelques artistes...</h2>
         <div class="motif__barre--gauche"></div>
 
-        <section class="artiste">
+        <div class="artiste">
             <article class="artiste__article">
                 <div class="artiste__article--droite">
                     <img src="../public/img/francois-pompon.webp" alt="photo">
@@ -126,7 +125,7 @@
                 </div>
                 <h3>Jiménez DEREDIA</h3>
             </article>
-        </section>
+        </div>
 
         <h2 class="accueil__titre">Nos exposition...</h2>
         <div class="motif__barre--gauche"></div>
@@ -147,9 +146,7 @@
                     <p>La fermeture des salles débute à 19h45 (21h45 les mardis)</p>
                 </li>
             </ul>
-            <button x-show="!tarifOpen" class="expo__btn" @click="tarifOpen = ! tarifOpen">
-                <p>Voir les tarifs</p>
-            </button>
+            <button x-show="!tarifOpen" class="expo__btn" @click="tarifOpen = ! tarifOpen">Voir les tarifs</button>
 
             <div class="expo__tarif" x-show="tarifOpen" x-transition.origin.top.duration.400ms>
                 <h2>Tarifs</h2>
@@ -186,7 +183,7 @@
         <h2 class="accueil__titre">Quelques oeuvres...</h2>
         <div class="motif__barre--gauche"></div>
 
-        <section class="carrousel" x-data="{hrefCourant: '#img-4'}">
+        <div class="carrousel" x-data="{hrefCourant: '#img-4'}">
             <button class="carrousel__btn carrousel__btn--avant" aria-label="slide précedant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth/2">
                 <img src="../public/assets/arrow-carrousel.svg" alt="bouton avant">
             </button>
@@ -244,7 +241,7 @@
                     </figure>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer>

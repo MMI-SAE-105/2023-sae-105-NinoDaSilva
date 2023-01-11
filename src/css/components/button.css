@@ -52,6 +52,7 @@ button {
     border-radius: 15px;
     font-size: var(--body-2);
     margin-top: 20px;
+    color: var(--blanc);
 }  
 
 
