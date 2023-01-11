@@ -41,3 +41,20 @@
     border-radius: 0 35px 0 0;
     z-index: -1;
 }
+
+
+.frise__triangle {
+    border-style: solid;
+    border-width: 250px;
+    border-bottom-width: 0;
+    border-top-width: 150px;
+    border-color: var(--vert-2) transparent transparent transparent;
+}
+
+.frise__triangle-container {
+    display: grid;
+    justify-content: center;
+    contain: content;
+    margin-inline: 5px;
+    max-width: 100%;
+}

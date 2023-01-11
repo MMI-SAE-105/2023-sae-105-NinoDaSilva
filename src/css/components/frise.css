@@ -1,0 +1,49 @@
+.frise {
+    position: relative;
+    max-width: 1080px;
+}
+
+.frise__container {
+    background-color: var(--vert-2);
+    margin: 5px;
+    margin-bottom: 0;
+    padding: 10px;
+    border-radius: 20px 20px 0 0;
+}
+
+.frise__date--droite,
+.frise__date--gauche {
+    font-size: 36px;
+    text-shadow: 1px 3px 5px gray;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 40px;
+}
+
+.frise__date--droite {
+    right: 10%;
+}
+
+.frise__date--gauche {
+    left: 10%;
+}
+
+.frise__card--droite,
+.frise__card--gauche {
+    background-color: var(--gris-1);
+    border-radius: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 50%;
+    max-width: 300px;
+    position: relative;
+}
+
+.frise__card--droite {
+    left: 45%;
+    box-shadow: -2px 2px 10px black;
+}
+
+.frise__card--gauche {
+    box-shadow: 2px 2px 10px black;
+}
