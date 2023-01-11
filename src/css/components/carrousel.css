@@ -4,6 +4,7 @@
     margin-inline: -10px;
     padding-top: 20px;
     padding-bottom: 20px;
+    box-sizing: border-box;
 }
 
 .carrousel__container {
@@ -15,8 +16,11 @@
 }
 
 .carrousel__elt {
-    width: 100% auto;
-    scroll-snap-align: left;
+    width: 60%;
+    display: flex;
+    margin-inline: 5%;
+    flex: none;
+    scroll-snap-align: center;
 }
 
 .carrousel__elt figure {

@@ -30,6 +30,8 @@ img {
     min-height: 140px;
 }
 
-.carrousel__btn img {
-    width: 90%;
+.carrousel__img {
+    height: 90%;
+    width: 100%;
 }
+

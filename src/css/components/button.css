@@ -100,3 +100,7 @@ button {
     right: 2%;
     padding-left: 3px;
 }
+
+.carrousel__btn img {
+    width: 90%;
+}
