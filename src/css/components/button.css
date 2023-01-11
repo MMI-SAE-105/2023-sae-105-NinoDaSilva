@@ -13,7 +13,8 @@
 
 
 .article__btn,
-.article__btn--droite {
+.article__btn--droite,
+.card__btn {
     position: absolute;
     bottom: 55px;
     border: var(--blanc) solid 2px;
@@ -50,6 +51,11 @@
 }  
 
 
-.frise__btn {
-
+.card__btn {
+    position: relative;
+    width: 110px;
+    bottom: 40px;
+    margin-inline: auto;
+    padding: 4px;
+    padding-bottom: 5px;
 }
