@@ -54,8 +54,10 @@
 .card__btn {
     position: relative;
     width: 110px;
-    bottom: 40px;
+    bottom: 20px;
+    margin-top: 40px;
     margin-inline: auto;
-    padding: 4px;
-    padding-bottom: 5px;
+    padding: 8px;
+    padding-bottom: 7px;
+    box-shadow: 0 1px 8px black;
 }
