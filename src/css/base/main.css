@@ -14,6 +14,11 @@
     margin-top: 100px;
 }
 
+p>a {
+    font-weight: bold;
+    font-style: italic;
+}
+
 body {
     background-color: var(--gris-1);
     font-family: var(--Josefin-sans);
