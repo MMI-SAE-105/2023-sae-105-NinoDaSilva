@@ -1,7 +1,28 @@
 .carrousel {
-    contain: content;
-    text-align: center;
-    margin-inline: -10px;
-    padding: 20px;
+    position: relative;
     background-color: var(--vert-2);
+    margin-inline: -10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.carrousel__container {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+}
+
+.carrousel__elt {
+    width: 100% auto;
+    scroll-snap-align: left;
+}
+
+.carrousel__elt figure {
+    margin: 10px;
+}
+
+.carrousel figcaption {
+    text-align: center;
 }

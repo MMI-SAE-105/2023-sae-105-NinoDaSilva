@@ -78,6 +78,25 @@ button {
     box-shadow: 0 1px 5px gray;
 }
 
+.carrousel__btn {
+    position: absolute;
+    top: 40%;
+    border-radius: 50%;
+    background-color: var(--gris-2);
+    display: grid;
+    place-content: center;
+    align-content: center;
+    width: 2rem;
+    height: 2rem;
+}
+
 .carrousel__btn--avant {
     transform: rotate(180deg);
+    left: 2%;
+    padding-left: 2px;
+}
+  
+.carrousel__btn--apres {
+    right: 2%;
+    padding-left: 3px;
 }

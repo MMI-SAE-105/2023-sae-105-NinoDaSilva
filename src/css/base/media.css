@@ -29,3 +29,7 @@ img {
 .frise__img {
     min-height: 140px;
 }
+
+.carrousel__btn img {
+    width: 90%;
+}

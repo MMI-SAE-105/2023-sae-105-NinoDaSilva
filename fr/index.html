@@ -186,64 +186,63 @@
         <h2 class="accueil__titre">Quelques oeuvres...</h2>
         <div class="motif__barre--gauche"></div>
 
-        <section class="carrousel">
-            <div class="carrousel__container" x-data="{hrefCourant: '#img-1'}">
-                <button class="carrousel__btn" aria-label="slide précedant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth">
-                    <img class="carrousel__btn--avant" src="../public/assets/arrow-carrousel.svg" alt="bouton avant">
-                </button>
+        <section class="carrousel" x-data="{hrefCourant: '#img-1'}">
+            <button class="carrousel__btn carrousel__btn--avant" aria-label="slide précedant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth">
+                <img src="../public/assets/arrow-carrousel.svg" alt="bouton avant">
+            </button>
+            <button class="carrousel__btn carrousel__btn--apres" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">
+                <img src="../public/assets/arrow-carrousel.svg" alt="bouton apres">
+            </button>
 
-                <div id="img-1" class="carrousel__img">
+            <div class="carrousel__container">
+                <div id="img-1" class="carrousel__elt">
                     <figure>
                         <img src="./" alt="image 1">
                         <figcaption>None</figcaption>
                     </figure>
                 </div>
-                <div id="img-2" class="carrousel__img">
+                <div id="img-2" class="carrousel__elt">
                     <figure>
                         <img src="./" alt="image 2">
                         <figcaption>None</figcaption>
                     </figure>
                 </div>
-                <div id="img-3" class="carrousel__img">
+                <div id="img-3" class="carrousel__elt">
                     <figure>
                         <img src="./" alt="image 3">
                         <figcaption>None</figcaption>
                     </figure>
                 </div>
-                <div id="img-4" class="carrousel__img">
+                <div id="img-4" class="carrousel__elt">
                     <figure>
                         <img src="./" alt="image 4">
                         <figcaption>None</figcaption>
                     </figure>
                 </div>
-                <div id="img-5" class="carrousel__img">
+                <div id="img-5" class="carrousel__elt">
                     <figure>
                         <img src="./" alt="image 5">
                         <figcaption>None</figcaption>
                     </figure>
                 </div>
-                <div id="img-6" class="carrousel__img">
+                <div id="img-6" class="carrousel__elt">
                     <figure>
                         <img src="./" alt="image 6">
                         <figcaption>None</figcaption>
                     </figure>
                 </div>
-                <div id="img-7" class="carrousel__img">
+                <div id="img-7" class="carrousel__elt">
                     <figure>
                         <img src="./" alt="image 7">
                         <figcaption>None</figcaption>
                     </figure>
                 </div>
-                <div id="img-8" class="carrousel__img">
+                <div id="img-8" class="carrousel__elt">
                     <figure>
                         <img src="./" alt="image 8">
                         <figcaption>None</figcaption>
                     </figure>
                 </div>
-
-                <button class="carrousel__btn" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">
-                    <img class="carrousel__btn--après" src="../public/assets/arrow-carrousel.svg" alt="bouton apres">
-                </button>
             </div>
         </section>
     </main>
