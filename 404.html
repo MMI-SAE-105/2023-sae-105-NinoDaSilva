@@ -18,6 +18,12 @@
         <p>ou continuez votre visite sur d'autres pages...</p>
     </div>
 
+    <form class="erreur__form" action="https://google.com/" method="GET" x-data="{ q:'', }" x-on:submit="q = q + ' site:dart.nino-da-silv.fr'">
+        <label for="q">Que cherchez-vous ?</label>
+        <input type="text" id="q" name="q" x-model="q">
+        <button class="erreur__btn" type="submit">Rechercher</button>
+    </form>
+
     <nav class="erreur__nav">
         <ul>
             <li class="erreur__nav-link">

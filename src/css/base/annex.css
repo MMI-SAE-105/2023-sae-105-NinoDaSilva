@@ -34,3 +34,7 @@
 .erreur__link {
     text-decoration: underline;
 }
+
+.erreur__form {
+    margin-top: 20px;
+}

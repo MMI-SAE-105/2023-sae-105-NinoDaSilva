@@ -61,3 +61,15 @@
     padding-bottom: 7px;
     box-shadow: 0 1px 8px black;
 }
+
+.erreur__btn {
+    margin-top: 15px;
+    font-size: var(--body-1);
+    margin-bottom: 20px;
+    padding: 6px;
+    padding-bottom: 4px;
+    width: 110px;
+    border-radius: 10px;
+    border: var(--vert-1) solid 2px;
+    box-shadow: 0 1px 5px gray;
+}
