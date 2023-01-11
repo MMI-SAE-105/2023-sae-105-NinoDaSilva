@@ -66,9 +66,260 @@
             </ul>
         </nav>
     </header>
+    <header x-data="{menuOpen: false}">
+        <div class="header">
+            <div class="header__elt">
+                <a href="../en/index.html" onclick="document.cookie = 'nf_lang=en; path=/'"> 
+                    <img class="header__icon--langue" src="../public/assets/header/france.svg" alt="icone langue">
+                </a>
+                <a href="./index.html">
+                    <img class="header__icon--dart" src="../public/assets/Logo-dart.svg" alt="logo Dart">
+                </a>
+                <button class="header__btn" aria-controls="menu" aria-expanded="true" @click="menuOpen = ! menuOpen">
+                    <img x-show="!menuOpen" x-transition.opacity.duration.450ms.scale.50 class="header__icon--menu" src="../public/assets/header/menu-open.svg" alt="menu deroulant">
+                    <img x-show="menuOpen" x-transition.opacity.duration.420ms.scale.20 class="header__icon--menu" src="../public/assets/header/cross.svg" alt="croix">
+                </button>
+            </div>
+        </div>
+
+        <nav id="menu" class="menu" x-show="menuOpen" x-transition.origin.right.top.opacity.duration.500ms>
+            <ul>
+                <li class="menu__list">
+                    <a class="menu__link" href="./s-szukalski.html">Stanislaw Szukalski</a>
+                    <a class="menu__link" href="./s-szukalski.html">
+                        <img src="../public/assets/arrow-menu.svg" alt="fleche">
+                    </a>
+                </li>
+                <li class="menu__list">
+                    <a class="menu__link" href="./f-pompon.html">François Pompon</a>
+                    <a class="menu__link" href="./f-pompon.html">
+                        <img src="../public/assets/arrow-menu.svg" alt="fleche">
+                    </a>
+                </li>
+                <li class="menu__list">
+                    <a class="menu__link" href="./j-deredia.html">Jiménez Deredia</a>
+                    <a class="menu__link" href="./j-deredia.html">   
+                        <img src="../public/assets/arrow-menu.svg" alt="fleche">
+                    </a>
+                </li>
+                <li class="menu__list">
+                    <a class="menu__link" href="./c-cliff.html">Clarice Cliff</a>
+                    <a class="menu__link" href="./c-cliff.html">
+                        <img src="../public/assets/arrow-menu.svg" alt="fleche">
+                    </a>
+                </li>
+                <li class="menu__list">
+                    <a class="menu__link" href="./en-savoir-plus.html">En savoir plus</a>
+                    <a class="menu__link" href="./en-savoir-plus.html">
+                        <img src="../public/assets/arrow-menu.svg" alt="fleche">
+                    </a>
+                </li>
+                <li class="menu__list">
+                    <a class="menu__link" href="./contact.html">Contact</a>
+                    <a class="menu__link" href="./contact.html">
+                        <img src="../public/assets/arrow-menu.svg" alt="fleche">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1 class="titre">Art Deco</h1>
+            <p class="margin--bottom">The Art Deco manifested across the spectrum of the visual arts: from architecture, painting, and sculpture to the graphic and decorative arts. 
+                While Art Deco practitioners were often paying homage to modernist influences such as Cubism, De Stijl, and Futurism, the references were indirect; it was as though they were taking the results of a few decades of distilling compositions to the most basic forms and inventing a new style that could be visually pleasing but not intellectually threatening.
+            </p>
+        </section>
+
+        <h2 class="accueil__titre">Some artists...</h2>
+        <div class="motif__barre--gauche"></div>
+
+        <div class="artiste">
+            <article class="artiste__article">
+                <div class="artiste__article--droite">
+                    <img src="../public/img/francois-pompon.webp" alt="photo">
+                    <a href="./f-pompon.html">
+                        <div class="article__btn--droite">
+                            <p>En savoir plus</p>
+                        </div>
+                    </a>
+                </div>
+                <h3>François POMPON</h3>
+            </article>
+
+            <article class="artiste__article">
+                <div class="artiste__article--gauche">
+                    <img src="../public/img/struggle.webp" alt="photo">
+                    <a href="./s-szukalski.html">
+                        <div class="article__btn">
+                            <p>En savoir plus</p>
+                        </div>
+                    </a>
+                </div>
+                <h3>Stanislaw SZUKALSKI</h3>
+            </article>
+
+            <article class="artiste__article">
+                <div class="artiste__article--droite">
+                    <img src="../public/img/Cliff.webp" alt="photo">
+                    <a href="./c-cliff.html">
+                        <div class="article__btn--droite">
+                            <p>En savoir plus</p>
+                        </div>
+                    </a>
+                </div>
+                <h3>Clarice CLIFF</h3>
+            </article>
+
+            <article class="artiste__article">
+                <div class="artiste__article--gauche">
+                    <img src="../public/img/jimenez.webp" alt="photo">
+                    <a href="./j-deredia.html">
+                        <div class="article__btn">
+                            <p>En savoir plus</p>
+                        </div>
+                    </a>
+                </div>
+                <h3>Jiménez DEREDIA</h3>
+            </article>
+        </div>
+
+        <h2 class="accueil__titre">Nos exposition...</h2>
+        <div class="motif__barre--gauche"></div>
+
+        <section class="expo" x-data="{tarifOpen: false}">
+            <h3 class="expo__titre">Sculptura</h3>
+            <div class="expo__barre-milieu"></div>
+            <h4>Du 13 avril au 23 juin 2021</h4>
+            <p>Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
+            <ul class="expo__list">
+                <li>
+                    <p>Tous les jours de 11h à 20h, sauf le lundi</p>
+                </li>
+                <li>
+                    <p>Nocturne le mardi, jusqu'à 22h</p>
+                </li>
+                <li>
+                    <p>La fermeture des salles débute à 19h45 (21h45 les mardis)</p>
+                </li>
+            </ul>
+            <button x-show="!tarifOpen" class="expo__btn" @click="tarifOpen = ! tarifOpen">Voir les tarifs</button>
+
+            <div class="expo__tarif" x-show="tarifOpen" x-transition.origin.top.duration.400ms>
+                <h2>Tarifs</h2>
+                <ul class="tarif__list">
+                    <li>
+                        <p>Plein tarif : <strong>11€</strong></p>
+                    </li>
+                    <li>
+                        <p>Tarif réduit : <strong>7,50€</strong></p>
+                    </li>
+                    <li>
+                        <p>Réduction 13 - 25 ans : <strong>5€</strong></p>
+                    </li>
+                    <li>
+                        <p>Fondation Cartier Pass : <strong>18€ - 50€</strong></p>
+                    </li>
+                    <li>
+                        <p>Moins de 13 ans, laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier Pass, 
+                            étudiants : <strong>Gratuit</strong>
+                        </p>
+                    </li>
+                </ul>
+                <div class="tarif__billet">
+                    <h2>Billeterie en ligne juste ici</h2>
+                    <div class="tarif__btn">
+                        <a href="../404.html">
+                            <img src="../public/assets/button/arrow.svg" alt="bouton">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h2 class="accueil__titre">Quelques oeuvres...</h2>
+        <div class="motif__barre--gauche"></div>
+
+        <div class="carrousel" x-data="{hrefCourant: '#img-4'}">
+            <button class="carrousel__btn carrousel__btn--avant" aria-label="slide précedant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth/2">
+                <img src="../public/assets/arrow-carrousel.svg" alt="bouton avant">
+            </button>
+            <button class="carrousel__btn carrousel__btn--apres" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth/2">
+                <img src="../public/assets/arrow-carrousel.svg" alt="bouton apres">
+            </button>
+
+            <div class="carrousel__container" x-ref="parent">
+                <div id="img-1" class="carrousel__elt">
+                    <figure>
+                        <a href="https://www.wikiart.org/fr/clarice-cliff/conical-coffee-pot-bizarre-blue-and-white">
+                            <img class="carrousel__img" src="../public/img/CCliff/coffee-bizarre.webp" alt="image 1">
+                        </a>
+                        <figcaption>Pot Bizarre</figcaption>
+                    </figure>
+                </div>
+                <div id="img-2" class="carrousel__elt">
+                    <figure>
+                        <a href="https://www.wikiart.org/fr/francois-pompon/coq-dormant-1923">
+                            <img class="carrousel__img" src="../public/img/FPompon/coq.webp" alt="image 2">
+                        </a>
+                        <figcaption>Le Coq Dormant</figcaption>
+                    </figure>
+                </div>
+                <div id="img-3" class="carrousel__elt">
+                    <figure>
+                        <a href="https://www.wikiart.org/fr/jimenez-deredia/the-alchemist">
+                            <img class="carrousel__img" src="../public/img/JDeredia/alchemist.webp" alt="image 3">
+                        </a>
+                        <figcaption>The Alchemist</figcaption>
+                    </figure>
+                </div>
+                <div id="img-4" class="carrousel__elt">
+                    <figure>
+                        <a href="https://www.wikiart.org/fr/stanislaw-szukalski/birth-of-thought-1916">
+                            <img class="carrousel__img" src="../public/img/SSzukalski/birth.webp" alt="image 4">
+                        </a>
+                        <figcaption>Birth of Thought</figcaption>
+                    </figure>
+                </div>
+                <div id="img-5" class="carrousel__elt">
+                    <figure>
+                        <a href="https://www.wikiart.org/fr/clarice-cliff/ravel-conical-coffee-ware-1930">
+                            <img class="carrousel__img" src="../public/img/CCliff/Ravel.webp" alt="image 5">
+                        </a>
+                        <figcaption>Ravel</figcaption>
+                    </figure>
+                </div>
+                <div id="img-6" class="carrousel__elt">
+                    <figure>
+                        <a href="https://www.wikiart.org/fr/francois-pompon/l-ours-polaire-1920">
+                            <img class="carrousel__img" src="../public/img/FPompon/ours-polaire.webp" alt="image 6">
+                        </a>
+                        <figcaption>L'ours Polaire</figcaption>
+                    </figure>
+                </div>
+                <div id="img-7" class="carrousel__elt">
+                    <figure>
+                        <a href="https://www.wikiart.org/fr/jimenez-deredia/genesis-of-peru">
+                            <img class="carrousel__img" src="../public/img/JDeredia/Genesis-of-peru.webp" alt="image 7">
+                        </a>
+                        <figcaption>Genesis of Peru</figcaption>
+                    </figure>
+                </div>
+                <div id="img-8" class="carrousel__elt">
+                    <figure>
+                        <a href="https://www.wikiart.org/fr/stanislaw-szukalski/law-1916">
+                            <img class="carrousel__img" src="../public/img/SSzukalski/law.webp" alt="image 8">
+                        </a>
+                        <figcaption>Law</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <footer>
-        <img class="footer__icon--dart" src="../public/assets/Logo-dart.svg">
+        <img class="footer__icon--dart" src="../public/assets/Logo-dart.svg" alt="icone">
         <div class="footer__motif-barre"></div>
         <ul class="footer__list--nav">
             <li>
@@ -85,17 +336,17 @@
         <div class="footer__motif-barre--petite"></div>
         <ul class="footer__list--social">
             <li>
-                <a href="">
+                <a href="https://dart-intagram.com">
                     <img class="list__icon" src="../public/assets/footer/instagram.svg" alt="icone instagram">
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="https://dart-facebook.com">
                     <img class="list__icon" src="../public/assets/footer/facebook.svg" alt="icone facebook">
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="https://dart-twitter.com">
                     <img class="list__icon" src="../public/assets/footer/twitter.svg" alt="icone twitter">
                 </a>
             </li>
@@ -105,5 +356,7 @@
             <p>Tout droits réservés</p>
         </div>
     </footer>
+</body>
+</html>
 </body>
 </html>
