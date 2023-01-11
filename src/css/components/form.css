@@ -43,7 +43,7 @@
 }
 
 .form__button:focus {
-    background-color: var(--bleu-3);
+    background-color: var(--vert-1);
     transform: scale(108%);
     transition: 0.2s;
 }
