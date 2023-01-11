@@ -21,6 +21,7 @@
     margin-inline: 5%;
     flex: none;
     scroll-snap-align: center;
+    margin-inline: auto;
 }
 
 .carrousel__elt figure {
@@ -29,4 +30,6 @@
 
 .carrousel figcaption {
     text-align: center;
+    color: var(--blanc);
+    margin-top: 4px;
 }

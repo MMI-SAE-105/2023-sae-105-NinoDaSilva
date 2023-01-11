@@ -186,15 +186,15 @@
         <h2 class="accueil__titre">Quelques oeuvres...</h2>
         <div class="motif__barre--gauche"></div>
 
-        <section class="carrousel" x-data="{hrefCourant: '#img-1'}">
-            <button class="carrousel__btn carrousel__btn--avant" aria-label="slide précedant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth">
+        <section class="carrousel" x-data="{hrefCourant: '#img-4'}">
+            <button class="carrousel__btn carrousel__btn--avant" aria-label="slide précedant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth/2">
                 <img src="../public/assets/arrow-carrousel.svg" alt="bouton avant">
             </button>
-            <button class="carrousel__btn carrousel__btn--apres" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">
+            <button class="carrousel__btn carrousel__btn--apres" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth/2">
                 <img src="../public/assets/arrow-carrousel.svg" alt="bouton apres">
             </button>
 
-            <div class="carrousel__container">
+            <div class="carrousel__container" x-ref="parent">
                 <div id="img-1" class="carrousel__elt">
                     <figure>
                         <img class="carrousel__img" src="../public/img/CCliff/coffee-bizarre.webp" alt="image 1">
