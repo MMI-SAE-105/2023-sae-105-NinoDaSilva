@@ -42,7 +42,8 @@ h3 {
     margin-bottom: 10px;
 }
 
-.accueil__titre {
+.accueil__titre,
+.frise__titre {
     margin-left: 20px;
 }
 
@@ -134,7 +135,8 @@ h3 {
 
 
 .artiste__titre,
-.oeuvre__titre {
+.oeuvre__titre,
+.frise__titre {
     padding-top: 20px;
 }
 
