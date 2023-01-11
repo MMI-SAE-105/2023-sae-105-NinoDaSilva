@@ -186,8 +186,8 @@
         <h2 class="accueil__titre">Quelques oeuvres...</h2>
         <div class="motif__barre--gauche"></div>
 
-        <section class="oeuvre">
-            <div class="oeuvre__carrousel" x-data="{hrefCourant: '#img-1'}">
+        <section class="carrousel">
+            <div class="carrousel__container" x-data="{hrefCourant: '#img-1'}">
                 <button class="carrousel__btn" aria-label="slide précedant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth">
                     <img class="carrousel__btn--avant" src="../public/assets/arrow-carrousel.svg" alt="bouton avant">
                 </button>
