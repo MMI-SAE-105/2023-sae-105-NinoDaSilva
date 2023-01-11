@@ -78,6 +78,6 @@ button {
     box-shadow: 0 1px 5px gray;
 }
 
-.carrousel__btn {
-    
+.carrousel__btn--avant {
+    transform: rotate(180deg);
 }
