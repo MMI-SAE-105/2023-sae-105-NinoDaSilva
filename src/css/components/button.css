@@ -10,3 +10,46 @@
     right: 20px;
     box-shadow: 1px 1px 8px gray;
 }
+
+
+.article__btn,
+.article__btn--droite {
+    position: absolute;
+    bottom: 55px;
+    border: var(--blanc) solid 2px;
+    width: 100px;
+    padding: 8px;
+    padding-top: 9px;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px black;
+}
+
+.article__btn p,
+.article__btn--droite p {
+    color: var(--blanc);
+    font-size: var(--body-2);
+}
+
+.article__btn {
+    left: 20px;
+}
+
+.article__btn--droite {
+    right: 20px;
+}
+
+
+.expo__btn {
+    background: none;
+    border: var(--blanc) solid 2px;
+    padding: 8px;
+    padding-bottom: 6px;
+    border-radius: 15px;
+    font-size: var(--body-2);
+    margin-top: 20px;
+}  
+
+
+.frise__btn {
+
+}
